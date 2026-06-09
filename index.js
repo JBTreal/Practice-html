@@ -6,24 +6,10 @@
 //day 6: --N/A--;
 //day 7: 6:40:08;
 //day 8: 7:34:13;
+//day 9: --N/A--;
+
 const get_answer= document.getElementById("get_answer");
 const text = document.getElementById("text");
 const text2 = document.getElementById("text2");
 const submitbtn = document.getElementById("submit");
 
-const fruits = ["apple", "pinespple", "banana", "mango", "coconut"];
-
-const numbers = [1, 10, 3, 2, 7, 8,9 ,5 ,4, 6 ];
-
-fruits.sort();
-
-console.log(fruits);
-
-const date = new Date();
-const yer = date.getFullYear();
-const month = date.getMonth();
-const day = date.getDay();
-
-console.log(yer);
-console.log(month);
-console.log(day);
