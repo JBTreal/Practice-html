@@ -16,8 +16,13 @@ const submitbtn = document.getElementById("submit");
 import {PI, getCircumference, getArea, getVolume} from './mathUtil.js';
 
 //element selector
-const heading = document.getElementById("welcome");
-heading.style.backgroundColor = "yellow";
-heading.style.textAlign = "center";
+const fruits = document.getElementsByClassName("fruits");
 
-console.log(heading);
+
+Array.from(fruits).forEach(friut=> {friut.style.backgroundColor = "yellow"});
+
+const h4elements = document.getElementsByTagName("h4");
+const liElement = document.getElementsByTagName("li");
+
+Array.from(h4elements).forEach(root => {root.style.backgroundColor = "green"});
+Array.from(liElement).forEach(veggie => {veggie.style.backgroundColor = "lightgreen"});
