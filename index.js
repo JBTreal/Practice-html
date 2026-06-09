@@ -15,15 +15,13 @@ const submitbtn = document.getElementById("submit");
 
 import {PI, getCircumference, getArea, getVolume} from './mathUtil.js';
 
-function func1(callback){
-setTimeout(() => {console.log("Task 1"); callback()}, 3000)
+try{
+console.log('hello');
 }
-
-function func2(){
-console.log("Task 2");
-console.log("Task 3");
-console.log("Task 4");
-console.log("Task 5");
+catch(error){
+    console.error(error);
 }
-
-func1(func2);
+finally{
+    console.log('this always execute');
+}
+console.log('YOU HAVE REACHED THE END');
