@@ -26,3 +26,7 @@ const liElement = document.getElementsByTagName("li");
 
 Array.from(h4elements).forEach(root => {root.style.backgroundColor = "green"});
 Array.from(liElement).forEach(veggie => {veggie.style.backgroundColor = "lightgreen"});
+
+const element = document.querySelector(".fruits");
+
+console.log(element);
