@@ -15,7 +15,9 @@ const submitbtn = document.getElementById("submit");
 
 import {PI, getCircumference, getArea, getVolume} from './mathUtil.js';
 
-const username = "JBT dev";
-const welcome= document.getElementById("welcome");
+//element selector
+const heading = document.getElementById("welcome");
+heading.style.backgroundColor = "yellow";
+heading.style.textAlign = "center";
 
-welcome.textContent += username === ""? 'Guest': username; 
+console.log(heading);
