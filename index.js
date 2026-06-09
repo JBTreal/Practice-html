@@ -13,3 +13,13 @@ const text = document.getElementById("text");
 const text2 = document.getElementById("text2");
 const submitbtn = document.getElementById("submit");
 
+import {PI, getCircumference, getArea, getVolume} from './mathUtil.js';
+
+console.log(PI);
+const circumference = getCircumference(10);
+const area = getArea(10);
+const volume = getVolume(10);
+
+console.log(volume.toFixed(2));
+console.log(area.toFixed(2));
+console.log(circumference.toFixed(2));
