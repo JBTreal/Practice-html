@@ -16,12 +16,21 @@ const submitbtn = document.getElementById("submit");
 import {PI, getCircumference, getArea, getVolume} from './mathUtil.js';
 
 try{
-console.log('hello');
+const dividend = Number(window.prompt("Enter a dividend: "));
+const divisor = Number(window.prompt("Enter your divisor: "));
+
+if(divisor ==0){
+    throw new Error("You can't divide by zero");
+}
+if(isNaN(dividend) || isNaN(divisor)){
+    throw new Error("Values must be a number");
+}
+
+const result = dividend/divisor;
+
+console.log(result);
 }
 catch(error){
     console.error(error);
 }
-finally{
-    console.log('this always execute');
-}
-console.log('YOU HAVE REACHED THE END');
+console.log("You reach the end");
