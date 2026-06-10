@@ -21,3 +21,4 @@ const element = document.querySelectorAll("ul");
 element.forEach(firstElem => {const First = firstElem.firstElementChild; First.style.backgroundColor = "yellow";  
 });
 
+element.forEach(lastElem =>{const Last = lastElem.lastElementChild; Last.style.backgroundColor ="red";});
