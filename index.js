@@ -8,6 +8,7 @@
 //day 8: 7:34:13;
 //day 9: --N/A--;
 //day 10:8:31:48;
+
 const get_answer= document.getElementById("get_answer");
 const text = document.getElementById("text");
 const text2 = document.getElementById("text2");
@@ -15,18 +16,8 @@ const submitbtn = document.getElementById("submit");
 
 import {PI, getCircumference, getArea, getVolume} from './mathUtil.js';
 
-//element selector
-const fruits = document.getElementsByClassName("fruits");
+const element = document.querySelectorAll("ul");
 
+element.forEach(firstElem => {const First = firstElem.firstElementChild; First.style.backgroundColor = "yellow";  
+});
 
-Array.from(fruits).forEach(friut=> {friut.style.backgroundColor = "yellow"});
-
-const h4elements = document.getElementsByTagName("h4");
-const liElement = document.getElementsByTagName("li");
-
-Array.from(h4elements).forEach(root => {root.style.backgroundColor = "green"});
-Array.from(liElement).forEach(veggie => {veggie.style.backgroundColor = "lightgreen"});
-
-const element = document.querySelectorAll(".fruits");
-
-element.forEach(food => {food.style.backgroundColor ="red"});
