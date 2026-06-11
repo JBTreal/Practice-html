@@ -17,9 +17,12 @@ const submitbtn = document.getElementById("submit");
 
 import {PI, getCircumference, getArea, getVolume} from './mathUtil.js';
 
-const element = document.querySelectorAll("ul");
+const new_h1 = document.createElement("h1");
 
-element.forEach(firstElem => {const First = firstElem.firstElementChild; First.style.backgroundColor = "yellow";  
-});
+new_h1.textContent= "i like rat";
+//document.body.prepend(new_h1);
 
-element.forEach(lastElem =>{const Last = lastElem.lastElementChild; Last.style.backgroundColor ="red";});
+document.body.insertBefore(new_h1,document.getElementById("box2"));
+
+const boxes = document.querySelectorAll(".box");
+document.body.insertBefore(new_h1, boxes[1]);
